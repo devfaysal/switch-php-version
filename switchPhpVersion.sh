@@ -10,7 +10,7 @@ if [ "$newVersion" = "$currentVersion" ]; then
     exit
 fi
 
-if [ "$newVersion" != "7.4" ] || [ "$newVersion" != "8.1" ]; then
+if [ "$newVersion" != "7.4" ] || [ "$newVersion" != "8.1" ] || [ "$newVersion" != "8.2" ]; then
     echo "PHP version $newVersion is not currently installed"
     exit
 fi
