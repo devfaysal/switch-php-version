@@ -1,14 +1,21 @@
 # Switch PHP Version
-In development some projects might require different PHP version.
+In development, some projects might require different PHP versions.
 
-Switching PHP CLI version and PHP version for serving web requires several commands.
-This script will runn all of the commands so that you do not need to run one by one.
+Switching the PHP CLI and PHP versions for web service requires several commands.
+This script will run all the commands so that you do not need to run one by one.
+PHP versions need to be installed before using this.
 
-**Currently support apache for web.**
+This repository can help you easily setup dev machine in Ubuntu: https://github.com/devfaysal/ubuntu-php-dev-setup
+
+**Currently support only Apache for web server in Ubuntu.**
 
 ``` git clone https://github.com/devfaysal/switch-php-version.git ```
 
 ``` cd switch-php-version ```
 
-``` ./switchPhpVersion.sh ```
+``` mv switchPhpVersion.sh /usr/local/bin/switchphp  ```
+
+Note: you can name 'switchphp' or anything that you prefer.
+
+now you can run ```switchphp``` command from anywhere, it will ask you which version you want to use.
 
